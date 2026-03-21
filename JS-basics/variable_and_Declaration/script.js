@@ -41,6 +41,3 @@ let num = 22;
 }
 
 console.log("Outside:", num); // 22
-
-const by = 99;
-let yadh = 9999;
