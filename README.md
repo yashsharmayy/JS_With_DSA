@@ -32,12 +32,20 @@ I am consistently practicing problems to improve my logic-building skills and pr
 
 ## 📅 Daily Progress
 
-### Day 1
+### Day 1 -Variables- Data Types 
 - Learned JavaScript basics:
   - Variables and declaration
   - Data Types and type system
   - Operators  
 
+## 📅 Day 2 - Control Flow & Loops
+
+### 📚 Topics Covered:
+- if, else if, else statements
+- Comparison operators (== vs ===)
+- for loop
+- while loop
+- do...while loop
 ---
 
 ## 🎯 Goals
