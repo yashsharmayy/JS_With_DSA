@@ -9,7 +9,8 @@ var a = 13;
 // we can declare it again with same name without error
 // it is function scope : we can use it anywhere in a function
 
-let b = 12; // we can further change value of let
+let b = 12;
+b = 20; // we can further change value of let
 const c = 12; // we cannot change the value of const
 
 // reassigment and redeclaration
@@ -19,6 +20,8 @@ d = 13;
 
 let e = 15;
 e = 55;
+
+const f = 12;
 
 // Temporal Dead Zone--> utna area jitna js ko pta h vo exist krta h pr access ni de skta like js ko pta h z kya h pr pehle log m ni de skta
 
