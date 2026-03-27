@@ -48,6 +48,14 @@ I am consistently practicing problems to improve my logic-building skills and pr
 - do...while loop
 ---
 
+📅 Day 3 - Functions, Arrays & Objects  
+
+📚 Topics Covered:  
+Functions (declaration, parameters, return)  
+Arrays (basic operations, push, pop)  
+Objects (key-value pairs, accessing data)  
+
+
 ## 🎯 Goals
 
 - Solve DSA problems consistently  
