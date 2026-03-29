@@ -17,6 +17,7 @@ Namee();
 function dance(animal) {
   // animal is parameters
   console.log(`${animal} naach rha h `);
+  console.log(animal, " fir nach rha h ");
 }
 
 dance("Sher"); // sher , bhalu etc are arguments
@@ -24,8 +25,14 @@ dance("Bhalu");
 
 function Sum(a, b) {
   console.log(a * b);
+  console.log(a / b);
 }
 Sum(11, 8);
+Sum(5, 10);
+
+function msg() {
+  alert("Form submitted");
+}
 
 // default para
 
