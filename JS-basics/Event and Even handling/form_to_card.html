@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js-prac</title>
+    <style>
+      .profile {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        overflow: hidden;
+      }
+      .profileimg {
+        width: 100%;
+        object-fit: cover;
+      }
+      .card {
+        padding: 15px;
+        width: 500px;
+        border: 2px solid black;
+        border-radius: 7px;
+        margin: 10px;
+      }
+      form {
+        border: 2px solid black;
+        width: 300px;
+        padding: 15px;
+      }
+      #pfimg {
+        display: none;
+      }
+      .upbtn {
+        display: block;
+        padding: 8px 20px;
+        background: #52ce98;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" /><br /><br />
+
+      <label for="job">Job:</label>
+      <input type="text" id="job" placeholder="Enter job" /><br /><br />
+
+      <label for="pfimg">Profile img:</label>
+      <input type="file" id="pfimg" /><br /><br />
+      <button class="upbtn">Upload File</button><br />
+      <label for="about">About You:</label><br />
+      <textarea
+        id="about"
+        rows="5"
+        cols="30"
+        placeholder="About yourself..."
+      ></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <!-- <div class="card">
+      <div class="profile">
+        <img
+          src="https://images.unsplash.com/photo-1774387981914-c5a133e7380b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNnx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+      </div>
+      <h2>yash sharma</h2>
+      <h3>Developer</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut at ea et eos
+        aspernatur. Tempora a qui perspiciatis nam placeat, blanditiis
+        temporibus maxime dolorem laborum autem libero possimus quos ea.
+      </p>
+    </div> -->
+    <script>
+      const form = document.querySelector("form");
+
+      form.addEventListener("submit", (dets) => {
+        dets.preventDefault();
+
+        let inputs = document.querySelectorAll("input");
+        let info = document.querySelector("textarea");
+
+        let card = document.createElement("div");
+        card.classList.add("card");
+
+        let profile = document.createElement("div");
+        profile.classList.add("profile");
+
+        let profileimg = document.createElement("img");
+        profileimg.classList.add("profileimg");
+
+        let file = pfimg.files[0];
+        console.log(pfimg.files);
+
+        if (file) {
+          profileimg.src = URL.createObjectURL(file);
+        } else {
+          profileimg.src =
+            "https://images.unsplash.com/photo-1774331510646-a1781c4a9713";
+        }
+
+        let h2 = document.createElement("h2");
+        h2.textContent = inputs[0].value;
+        let h3 = document.createElement("h3");
+        h3.textContent = inputs[1].value;
+        let p = document.createElement("p");
+        p.textContent = info.value;
+
+        document.body.appendChild(card);
+
+        profile.appendChild(profileimg);
+        card.appendChild(profile);
+        card.appendChild(h2);
+        card.appendChild(h3);
+        card.appendChild(p);
+      });
+
+      let pfimg = document.querySelector("#pfimg");
+      let upbtn = document.querySelector(".upbtn");
+      upbtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        pfimg.click();
+      });
+      pfimg.addEventListener("change", (dets) => {
+        upbtn.textContent = `${dets.target.files[0].name}`;
+      });
+    </script>
+  </body>
+</html>
