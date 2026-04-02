@@ -60,3 +60,13 @@ upload.addEventListener("click", () => {
 file.addEventListener("change", (dets) => {
   upload.textContent = `${dets.target.files[0].name}`;
 });
+
+//---------mouseover,out-----------
+
+let box = document.querySelector(".box");
+box.addEventListener("mouseover", () => {
+  box.style.backgroundColor = "pink";
+});
+box.addEventListener("mouseout", () => {
+  box.style.backgroundColor = "#86f0d2";
+});

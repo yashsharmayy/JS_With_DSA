@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        border: 2px solid black;
+        background: #86f0d2;
+        position: absolute;
+        transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <script>
+      let box = document.querySelector(".box");
+      //   box.addEventListener("mouseover", () => {
+      //     box.style.backgroundColor = "pink";
+      //   });
+      //   box.addEventListener("mouseout", () => {
+      //     box.style.backgroundColor = "#86f0d2";
+      //   });
+
+      //   ------------
+      window.addEventListener("mousemove", (dets) => {
+        box.style.top = `${dets.clientY}px`;
+        box.style.left = `${dets.clientX}px`;
+      });
+    </script>
+  </body>
+</html>
