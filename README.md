@@ -37,8 +37,9 @@ I am consistently practicing problems to improve my logic-building skills and pr
   - Variables and declaration
   - Data Types and type system
   - Operators  
+---
 
-## 📅 Day 2 - Control Flow & Loops
+### 📅 Day 2 - Control Flow & Loops
 
 ### 📚 Topics Covered:
 - if, else if, else statements
@@ -48,12 +49,27 @@ I am consistently practicing problems to improve my logic-building skills and pr
 - do...while loop
 ---
 
-📅 Day 3 - Functions, Arrays & Objects  
+### 📅 Day 3 - Functions, Arrays & Objects  
 
 📚 Topics Covered:  
-Functions (declaration, parameters, return)  
-Arrays (basic operations, push, pop)  
-Objects (key-value pairs, accessing data)  
+- Functions (declaration, parameters, return)  
+- Arrays (basic operations, push, pop)  
+- Objects (key-value pairs, accessing data)  
+---
+### ✅ Day 4 – React Project & DOM Manipulation  
+- Started a new project using React  
+- Built a responsive Navbar 🧭  
+- Designed the Homepage layout 🏠  
+- Ensured responsiveness across devices 📱  
+- Strengthened JavaScript fundamentals:  
+  - DOM Manipulation (selecting elements, updating content, styling, creating elements)  
+
+---
+### ✅ Day 5 – Events & React Home Page  
+- Learned event handling (click, input, keyboard events)  
+- Built interactive UI using JavaScript  
+- Completed Home Page of React Jewelry Website 💎  
+
 
 
 ## 🎯 Goals
