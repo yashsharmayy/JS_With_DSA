@@ -70,3 +70,13 @@ box.addEventListener("mouseover", () => {
 box.addEventListener("mouseout", () => {
   box.style.backgroundColor = "#86f0d2";
 });
+
+// -------Event bubbling----
+// child p eventlistner na ho to parent p check krta h uspe hota h to run kr jata h
+// or baar baar child p eventlistner lgne ki jegh parent p lagate h
+
+// child ka event chloa to parent ka bhi chlelga
+let ul = document.querySelector(".fruits");
+ul.addEventListener("click", (dets) => {
+  dets.target.classList.toggle("lt");
+});
