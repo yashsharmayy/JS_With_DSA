@@ -51,9 +51,9 @@ I am consistently practicing problems to improve my logic-building skills and pr
 📅 Day 3 - Functions, Arrays & Objects  
 
 📚 Topics Covered:  
-Functions (declaration, parameters, return)  
-Arrays (basic operations, push, pop)  
-Objects (key-value pairs, accessing data)  
+- Functions (declaration, parameters, return)  
+- Arrays (basic operations, push, pop)  
+- Objects (key-value pairs, accessing data)  
 ---
 ### ✅ Day 4 – React Project & DOM Manipulation  
 - Started a new project using React  
