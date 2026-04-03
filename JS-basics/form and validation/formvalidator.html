@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login Form</title>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f2f2f2;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .form-container {
+        background: #fff;
+        padding: 25px;
+        border-radius: 10px;
+        width: 300px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .input-group {
+        margin-bottom: 15px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 14px;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+      }
+
+      input:focus {
+        border-color: #000;
+      }
+
+      .smallemail,
+      .smallePass {
+        color: red;
+        display: none;
+      }
+      .visible {
+        display: block;
+      }
+
+      button {
+        width: 100%;
+        padding: 10px;
+        background: black;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+
+      button:hover {
+        background: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <form>
+        <h2>Login</h2>
+
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input
+            required
+            type="text"
+            id="email"
+            placeholder="Enter your email"
+          />
+          <small class="smallemail" id="emailError">Invalid email</small>
+        </div>
+
+        <div class="input-group">
+          <label for="password">password</label>
+          <input
+            requiredv
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+          />
+          <small class="smallePass" id="passError">Invalid password</small>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <script>
+      let form = document.querySelector("form");
+      let Email = document.querySelector("#email");
+      let password = document.querySelector("#password");
+
+      let isvalid;
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        // email validator
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(Email.value)) {
+          document.querySelector(".smallemail").classList.add("visible");
+          isvalid = false;
+        } else {
+          document.querySelector(".smallemail").classList.remove("visible");
+          isvalid = true;
+        }
+        // password validator
+        const passwordRegex = /^.{6,}$/;
+        if (!passwordRegex.test(password.value)) {
+          document.querySelector(".smallePass").classList.add("visible");
+          isvalid = false;
+        } else {
+          document.querySelector(".smallePass").classList.remove("visible");
+          isvalid = true;
+        }
+
+        if (isvalid) {
+          alert("form Submitted");
+          form.reset();
+        } else {
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js-prac</title>
+    <style>
+      form {
+        border: 2px solid black;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 10px;
+      }
+      input {
+        padding: 20px;
+      }
+      small {
+        color: red;
+      }
+      .hide {
+        display: none;
+      }
+      .visible {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <input type="text" placeholder="Name" id="Name" />
+      <small class="hide"
+        >Name should be more then 3 characters or a valid name</small
+      >
+      <input type="email" name="email" id="email" placeholder="Email" />
+      <input type="password" name="pass" id="password" placeholder="password" />
+      <button type="submit">Submit</button>
+    </form>
+    <script src="./script.js"></script>
+  </body>
+</html>
