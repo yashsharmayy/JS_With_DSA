@@ -1,4 +1,5 @@
 // primitives data type --> inko copy krne pr ek real copy milegi
+
 // EX- (string, number , bolean , null , undefined , symbol)
 
 // refernece datatype--> inko copy krne pr copy ni milegi or refernce milega parent ka
@@ -16,7 +17,10 @@ let c = [1, 2, 3];
 let d = c; //reference
 d.pop(); // remove 1 value from d
 
-console.log(c); // removing 1 value from d also remove 1 value from c because  d having same value of c  mtlb d ki bhi value c ki hi h d ne udhar li h
+console.log(c); // [1,2]
+console.log(d); // [1,2]
+
+// removing 1 value from d also remove 1 value from c because  d having same value of c  mtlb d ki bhi value c ki hi h d ne udhar li h
 
 // symbol -> unique immutable value
 let u1 = Symbol("id");
@@ -25,9 +29,13 @@ let u2 = Symbol("id");
 console.log(u1 === u2); // false
 
 //-------type coercion (== vs ===)----
+// 👉 “When JavaScript changes the type of a value by itself, it is called coercion.”
 
 "5" + 1; // '51'
 "5" - 1; //  4
+
+// == checks value only
+// === checks value + type
 
 1 == "1"; // true
 1 === "1"; // false
