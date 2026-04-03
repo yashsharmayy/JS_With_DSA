@@ -37,6 +37,7 @@ I am consistently practicing problems to improve my logic-building skills and pr
   - Variables and declaration
   - Data Types and type system
   - Operators  
+---
 
 ### 📅 Day 2 - Control Flow & Loops
 
