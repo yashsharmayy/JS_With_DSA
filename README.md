@@ -38,7 +38,7 @@ I am consistently practicing problems to improve my logic-building skills and pr
   - Data Types and type system
   - Operators  
 
-## 📅 Day 2 - Control Flow & Loops
+### 📅 Day 2 - Control Flow & Loops
 
 ### 📚 Topics Covered:
 - if, else if, else statements
@@ -48,7 +48,7 @@ I am consistently practicing problems to improve my logic-building skills and pr
 - do...while loop
 ---
 
-📅 Day 3 - Functions, Arrays & Objects  
+### 📅 Day 3 - Functions, Arrays & Objects  
 
 📚 Topics Covered:  
 - Functions (declaration, parameters, return)  
