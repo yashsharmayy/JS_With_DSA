@@ -54,6 +54,21 @@ I am consistently practicing problems to improve my logic-building skills and pr
 Functions (declaration, parameters, return)  
 Arrays (basic operations, push, pop)  
 Objects (key-value pairs, accessing data)  
+---
+### ✅ Day 4 – React Project & DOM Manipulation  
+- Started a new project using React  
+- Built a responsive Navbar 🧭  
+- Designed the Homepage layout 🏠  
+- Ensured responsiveness across devices 📱  
+- Strengthened JavaScript fundamentals:  
+  - DOM Manipulation (selecting elements, updating content, styling, creating elements)  
+
+---
+### ✅ Day 5 – Events & React Home Page  
+- Learned event handling (click, input, keyboard events)  
+- Built interactive UI using JavaScript  
+- Completed Home Page of React Jewelry Website 💎  
+
 
 
 ## 🎯 Goals
