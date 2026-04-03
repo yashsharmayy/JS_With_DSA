@@ -4,9 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Timers and validator</title>
+    <style>
+      .alertbanner {
+        position: absolute;
+        background: #eb88fc;
+        text-align: center;
+        transform: translate(-50%);
+        transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        top: -100%;
+        left: 50%;
+        opacity: 0;
+        width: 200px;
+        border-radius: 10px;
+        padding: 20px;
+      }
+    </style>
   </head>
 
   <body>
+    <div class="alertbanner">Downloaded</div>
+    <button>Download</button>
     <script src="./script.js"></script>
   </body>
 </html>
