@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Theme</title>
+    <style>
+      body {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #3a3939;
+        color: white;
+        flex-direction: column;
+        transition: all 0.5s ease-in-out;
+      }
+      .dark {
+        background: #3a3939;
+        color: white;
+      }
+      .light {
+        color: #3a3939;
+        background: white;
+      }
+      button {
+        background: #66e6f1;
+        padding: 10px 20px;
+        color: rgb(7, 86, 223);
+        border: none;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body class="">
+    <h1>Change theme</h1>
+    <button>Toggle Theme</button>
+    <script>
+      let button = document.querySelector("button");
+      let body = document.querySelector("body");
+
+      theme = localStorage.getItem("theme");
+      body.classList.add(theme);
+
+      button.addEventListener("click", function () {
+        if (body.classList.contains("dark")) {
+          body.classList.add("light");
+          body.classList.remove("dark");
+          localStorage.setItem("theme", "light");
+        } else {
+          body.classList.add("dark");
+          body.classList.remove("light");
+          localStorage.setItem("theme", "dark");
+        }
+      });
+    </script>
+  </body>
+</html>
