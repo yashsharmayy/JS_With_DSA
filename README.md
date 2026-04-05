@@ -8,84 +8,102 @@ I am consistently practicing problems to improve my logic-building skills and pr
 ## 🚀 Topics Covered
 
 - 🔹 JavaScript Basics (ongoing)
-- (coming soon) 
-- 🔹 Arrays  
-- 🔹 Strings  
-- 🔹 Recursion  
-- 🔹 Sorting Algorithms  
-- 🔹 Searching Algorithms  
-- 🔹 Stack & Queue  
-- 🔹 Linked List  
-- 🔹 Trees  
-- 🔹 Graphs  
+- (coming soon)
+- 🔹 Arrays
+- 🔹 Strings
+- 🔹 Recursion
+- 🔹 Sorting Algorithms
+- 🔹 Searching Algorithms
+- 🔹 Stack & Queue
+- 🔹 Linked List
+- 🔹 Trees
+- 🔹 Graphs
 
 ---
 
 ## 🛠️ Tech Stack
 
-- JavaScript (ES6+)  
-- VS Code  
-- Git & GitHub  
-
+- JavaScript (ES6+)
+- VS Code
+- Git & GitHub
 
 ---
 
 ## 📅 Daily Progress
 
-### Day 1 -Variables- Data Types 
+### Day 1 -Variables- Data Types
+
 - Learned JavaScript basics:
   - Variables and declaration
   - Data Types and type system
-  - Operators  
+  - Operators
+
 ---
 
 ### 📅 Day 2 - Control Flow & Loops
 
 ### 📚 Topics Covered:
+
 - if, else if, else statements
 - Comparison operators (== vs ===)
 - for loop
 - while loop
 - do...while loop
----
-
-### 📅 Day 3 - Functions, Arrays & Objects  
-
-📚 Topics Covered:  
-- Functions (declaration, parameters, return)  
-- Arrays (basic operations, push, pop)  
-- Objects (key-value pairs, accessing data)  
----
-### ✅ Day 4 – React Project & DOM Manipulation  
-- Started a new project using React  
-- Built a responsive Navbar 🧭  
-- Designed the Homepage layout 🏠  
-- Ensured responsiveness across devices 📱  
-- Strengthened JavaScript fundamentals:  
-  - DOM Manipulation (selecting elements, updating content, styling, creating elements)  
 
 ---
-### ✅ Day 5 – Events & React Home Page  
-- Learned event handling (click, input, keyboard events)  
-- Built interactive UI using JavaScript  
-- Completed Home Page of React Jewelry Website 💎  
 
+### 📅 Day 3 - Functions, Arrays & Objects
 
+📚 Topics Covered:
+
+- Functions (declaration, parameters, return)
+- Arrays (basic operations, push, pop)
+- Objects (key-value pairs, accessing data)
+
+---
+
+### ✅ Day 4 – React Project & DOM Manipulation
+
+- Started a new project using React
+- Built a responsive Navbar 🧭
+- Designed the Homepage layout 🏠
+- Ensured responsiveness across devices 📱
+- Strengthened JavaScript fundamentals:
+  - DOM Manipulation (selecting elements, updating content, styling, creating elements)
+
+---
+
+### ✅ Day 5 – Events & React Home Page
+
+- Learned event handling (click, input, keyboard events)
+- Built interactive UI using JavaScript
+- Completed Home Page of React Jewelry Website 💎
+
+---
+
+### ✅ Day 6 – Forms, Validation, Timers & Intervals
+
+- Implemented forms and validation
+- Learned `setTimeout` and `setInterval`
+- Built:
+  - Countdown timer ⏳
+  - Auto-hide alert banner 🔔
+  - Dynamic UI updates
 
 ## 🎯 Goals
 
-- Solve DSA problems consistently  
-- Improve problem-solving skills  
-- Build strong fundamentals  
-- Prepare for coding interviews  
+- Solve DSA problems consistently
+- Improve problem-solving skills
+- Build strong fundamentals
+- Prepare for coding interviews
 
 ---
 
 ## 📈 Progress
 
-- ✅ Started DSA with JavaScript  
-- 🔄 Learning step by step  
-- 🚀 Improving daily  
+- ✅ Started DSA with JavaScript
+- 🔄 Learning step by step
+- 🚀 Improving daily
 
 ---
 
@@ -103,8 +121,8 @@ Suggestions and improvements are welcome!
 
 ## 📬 Contact
 
-- GitHub: yourusername  
-- LinkedIn: your-link  
+- GitHub: yourusername
+- LinkedIn: your-link
 
 ---
 
