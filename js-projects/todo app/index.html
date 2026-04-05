@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Todo App</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background: linear-gradient(45deg, rgb(248, 34, 252), rgb(4, 4, 141));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        background: #fff;
+        padding: 20px;
+        width: 350px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .input-section {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+      }
+
+      .input-section input {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .add {
+        padding: 10px 15px;
+        border: none;
+        background: #4caf50;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .todo-list {
+        list-style: none;
+      }
+
+      li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #fafafa;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+
+      .todo-list li.completed span {
+        text-decoration: line-through;
+        color: gray;
+      }
+
+      .actions button {
+        border: none;
+        padding: 5px 8px;
+        margin-left: 5px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      .complete {
+        background: #4caf50;
+        color: white;
+      }
+
+      .remove {
+        background: #f44336;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Todo App</h1>
+
+      <div class="input-section">
+        <input type="text" placeholder="Add a new task..." />
+        <button class="add">Add</button>
+      </div>
+
+      <ul class="todo-list">
+        <li>
+          <span>Learn JavaScript</span>
+          <div class="actions">
+            <button class="complete" onclick="completeTask(this)">✔</button>
+            <button class="remove" onclick="deleteTask(this)">✖</button>
+          </div>
+        </li>
+
+        <li>
+          <span>Build Todo App</span>
+          <div class="actions">
+            <button class="complete" onclick="completeTask(this)">✔</button>
+            <button class="remove" onclick="deleteTask(this)">✖</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
