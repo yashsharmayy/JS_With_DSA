@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js-prac</title>
+    <style>
+      body {
+        background: #99f3e9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .profile {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        overflow: hidden;
+      }
+      .profileimg {
+        width: 100%;
+        object-fit: cover;
+      }
+      .card {
+        padding: 15px;
+        width: 500px;
+        border: 2px solid black;
+        border-radius: 7px;
+        margin: 10px;
+        background-color: #99c9f3;
+      }
+      form {
+        border: 2px solid black;
+        width: 300px;
+        padding: 15px;
+        border-radius: 8px;
+        background-color: #a0d0ee;
+      }
+      #pfimg {
+        display: none;
+      }
+      .upbtn,
+      button {
+        display: block;
+        padding: 8px 20px;
+        background: #52ce98;
+        color: white;
+        border-radius: 5px;
+      }
+      input,
+      textarea {
+        padding: 4px 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Profile card maker</h1>
+    <form action="">
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" /><br /><br />
+
+      <label for="job">Job:</label>
+      <input type="text" id="job" placeholder="Enter job" /><br /><br />
+
+      <label for="pfimg">Profile img:</label>
+      <input type="file" id="pfimg" /><br /><br />
+      <button class="upbtn">Upload File</button><br />
+      <label for="about">About You:</label><br />
+      <textarea
+        id="about"
+        rows="5"
+        cols="30"
+        placeholder="About yourself..."
+      ></textarea>
+      <button type="submit">Submit</button>
+    </form>
+
+    <script src="./srcipt.js"></script>
+  </body>
+</html>
