@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Form UI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button class="call-btn">📞 Call Reminder</button>
+    <div id="notification" class="notification">
+      ✅ Reminder set Successfully
+    </div>
+    <section id="section1">
+      <form class="form-container">
+        <h2>📞 Call Form</h2>
+
+        <input required type="text" placeholder="Name" />
+        <input required type="datetime-local" class="date" placeholder="time" />
+        <input required type="text" placeholder="Purpose" />
+
+        <!-- File Upload -->
+        <input
+          required
+          type="file"
+          id="fileInput"
+          class="file"
+          onchange="
+            document.querySelector('.upload').textContent = `img selected`
+          "
+        />
+        <button
+          type="button"
+          class="upload"
+          onclick="document.getElementById('fileInput').click()"
+        >
+          Upload Image
+        </button>
+
+        <!-- Category -->
+        <div class="radio-group">
+          <label class="emergency">
+            <input required type="radio" name="category" value="emergency" />
+            Emergency
+          </label>
+
+          <label class="urgent">
+            <input required type="radio" name="category" value="urgent" />
+            Urgent
+          </label>
+
+          <label class="important">
+            <input required type="radio" name="category" value="important" />
+            Important
+          </label>
+
+          <label class="norush">
+            <input required type="radio" name="category" value="norush" /> No
+            Rush
+          </label>
+        </div>
+
+        <!-- Buttons -->
+        <button type="submit" class="btn createNote">Create Note</button>
+        <button type="reset" class="btn clearNote">Clear Note</button>
+      </form>
+    </section>
+    <section id="section2">
+      <div class="card-container">
+        <div class="emergencySec cardsec">
+          <h1 class="emergency">Emergency</h1>
+        </div>
+        <div class="urgentsec cardsec">
+          <h1 class="urgent">Urgent</h1>
+        </div>
+        <div class="importantsec cardsec">
+          <h1 class="important">Important</h1>
+        </div>
+        <div class="norushsec cardsec">
+          <h1 class="norush">NO Rush</h1>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
