@@ -3,9 +3,89 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>js-prac</title>
+    <title>Lazy Loading Full Screen Images</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      .hero-img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        display: block;
+        opacity: 0;
+        transition: all 0.8s;
+      }
+      .loaded {
+        opacity: 1;
+      }
+
+      .section {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        font-weight: bold;
+        background: #f1f1f1;
+      }
+
+      .section:nth-child(even) {
+        background: #ddd;
+      }
+    </style>
   </head>
   <body>
-    <script src="./script.js"></script>
+    <img
+      loading="lazy"
+      class="hero-img"
+      data-src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1600"
+      alt="Image 1"
+    />
+
+    <div class="section">Section 1</div>
+
+    <img
+      loading="lazy"
+      class="hero-img"
+      data-src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?w=1600"
+      alt="Image 2"
+    />
+
+    <div class="section">Section 2</div>
+
+    <img
+      loading="lazy"
+      class="hero-img"
+      data-src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=1600"
+      alt="Image 3"
+    />
+
+    <div class="section">Section 3</div>
+
+    <img
+      loading="lazy"
+      class="hero-img"
+      data-src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1600"
+      alt="Image 4"
+    />
+
+    <div class="section">Section 4</div>
+
+    <img
+      loading="lazy"
+      class="hero-img"
+      data-src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=1600"
+      alt="Image 5"
+    />
   </body>
+  <script src="script.js"></script>
 </html>
