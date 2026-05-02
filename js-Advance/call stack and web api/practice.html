@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input {
+        margin: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    First Number:<input type="text" id="input1" /><br />
+    Second Number:<input type="text" id="input2" /><br />
+
+    <button onclick="calculation('+')">+</button>
+    <button>-</button>
+    <button>*</button>
+    <button>/</button>
+
+    <script>
+      function calculation(op) {
+        let x = document.getElementById("input1").value;
+        let y = document.getElementById("input2").value;
+        if (op === "+") {
+          document.write(x + y);
+        }
+      }
+    </script>
+  </body>
+</html>
