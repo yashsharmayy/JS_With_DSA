@@ -27,23 +27,26 @@ let food = {
 };
 
 window.addEventListener("keydown", function (dets) {
-  if ((dets.key === "w" || dets.key === "ArrowUp") && direction !== "bottom")
+  if ((dets.key === "w" || dets.key === "ArrowUp") && direction !== "bottom") {
     direction = "top";
-  headDirection = 180;
+    headDirection = 180;
+  }
 
-  if ((dets.key === "s" || dets.key === "ArrowDown") && direction !== "top")
+  if ((dets.key === "s" || dets.key === "ArrowDown") && direction !== "top") {
     direction = "bottom";
-  headDirection = 0;
+    headDirection = 0;
+  }
 
-  if ((dets.key === "d" || dets.key === "ArrowRight") && direction !== "left")
+  if ((dets.key === "d" || dets.key === "ArrowRight") && direction !== "left") {
     direction = "right";
-  headDirection = 90;
+    headDirection = 270;
+  }
 
-  if ((dets.key === "a" || dets.key === "ArrowLeft") && direction !== "right")
+  if ((dets.key === "a" || dets.key === "ArrowLeft") && direction !== "right") {
     direction = "left";
-  headDirection = 90;
+    headDirection = 90;
+  }
 });
-
 for (let row = 0; row < rows; row++) {
   for (let col = 0; col < cols; col++) {
     const box = document.createElement("div");
@@ -90,12 +93,13 @@ function snakebody() {
   snake.forEach((snakebox) => {
     let box = boxes[`${snakebox.x}-${snakebox.y}`];
     box.classList.remove("snakebody", "snakehead");
+    box.style.transform = "";
   });
   snake.forEach((snakebox, idx) => {
     let box = boxes[`${snakebox.x}-${snakebox.y}`];
     if (idx === 0) {
       box.classList.add("snakehead");
-      box.style.rotate = `${headDirection}`;
+      box.style.transform = `rotate(${headDirection}deg)`;
     } else {
       box.classList.add("snakebody");
     }
