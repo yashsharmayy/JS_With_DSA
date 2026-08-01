@@ -19,3 +19,9 @@ console.log("sum of 10 and 20 is " + e + f); //sum of 10 and 20 is 1020
 // ("sum of 10 and 20 " + e )+ f islye yehap p concatisnation ho rha h
 
 console.log("sum of 10 and 20 is" + (e + f)); //sum of 10 and 20 is 30
+
+//---------------
+console.log("5" + 5); // 55
+console.log("5" - 5); // 0
+console.log("5" * 5); // 25
+console.log("5" / 5); // 1
