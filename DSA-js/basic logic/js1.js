@@ -73,7 +73,7 @@ console.log(Math.floor(g / h)); // 2 -- integer
 console.log(h % g); // 5 -- because divident is smaller then divisor
 // 5<12
 
-//
+//------------------------
 let I = 4563;
 console.log(I % 10); // 3
 console.log(I % 100); // 63
@@ -84,3 +84,65 @@ console.log(I / 10); // 456.3
 console.log(Math.floor(I / 10)); // 456
 console.log(Math.floor(I / 100)); // 45
 console.log(Math.floor(I / 1000)); // 4
+
+//-------------------
+
+// == vs ===
+// == -> check the value only
+// === -> check the value and datatype
+
+console.log(13 == "13"); // true;
+console.log(13 === "13"); // false;
+
+// (&&) (|| )
+
+console.log(10 > 5 && 15 > 6); // true
+console.log(10 > 5 && 15 < 6); // false
+
+console.log(10 > 5 || 15 > 6); // true
+console.log(10 > 5 || 15 < 6); // true
+
+//-----------------------------
+// ++ -> increment
+// --  -> decrement
+// post increment = a++
+// pre increment = ++a
+
+// que----
+let i = 11;
+i = i++ + ++i;
+console.log(i); //24
+
+// que---
+let j = 11; //-> 12 - > 13
+let k = 22; //-> 23 ->24
+let l = j + k + j++ + k++ + ++j + ++k;
+// l = 11 + 22 + 11 + 22  + 13 +24
+console.log("j=", j);
+console.log("k=", k);
+console.log("l=", l);
+
+//que---------
+
+let M = true; // true = 1
+let N = false; // false = 0
+++M;
+++N;
+console.log(M); // 2
+console.log(N); // 1
+
+// que-----
+let m = 11;
+m++; // valid
+//let n = 12++ // invalid (error)-> you cannot use increment with constant
+
+
+// que-------
+let a = 10;
+let b = ++(a++) // = ++10
+// error
+
+
+
+//-----------------------------------
+
