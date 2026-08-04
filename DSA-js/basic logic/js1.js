@@ -136,13 +136,59 @@ let m = 11;
 m++; // valid
 //let n = 12++ // invalid (error)-> you cannot use increment with constant
 
-
 // que-------
-let a = 10;
-let b = ++(a++) // = ++10
+let o = 10;
+// let p = ++(a++) // = ++10
 // error
-
-
 
 //-----------------------------------
 
+//Math.round() descrese 5<  ,increse 5>=
+
+console.log(Math.round(10.3)); //10
+console.log(Math.round(10.6)); //11
+console.log(Math.round(10.5)); //11
+
+console.log(Math.trunc(18.554)); //18 // remove the decimal values
+
+// diffrence between floor and trunc
+console.log(Math.floor(5.8)); // 5
+console.log(Math.trunc(5.8)); // 5
+
+console.log(Math.floor(-5.8)); // -6
+console.log(Math.trunc(-5.8)); // -5
+
+// -----------
+
+console.log(Math.pow(2, 5)); // 2^5=32
+console.log(Math.sqrt(16)); // 4
+console.log(Math.cbrt(27)); // 3
+
+console.log(Math.abs(-5)); //5  //negative to positive only
+
+console.log(Math.max(5, 7, 8, 9, 3, 1)); //9
+console.log(Math.min(5, 7, 8, 9, 3, 1)); //1
+
+console.log(Math.random()); //  0 -- 1
+console.log(Math.random() * 9000); //  0 -- 999
+console.log(Math.random() * 9000 + 1000); //  1000 -- 9999
+//otp
+console.log(Math.floor(Math.random() * 9000 + 1000)); //  1000 -- 9999
+
+const q = 872.2356;
+console.log(q.toFixed(2)); // 872.23
+
+// herons formula
+let x = 5;
+let y = 6;
+let z = 9;
+
+let s = (x + y + z) / 2;
+console.log(s);
+let herons = Math.sqrt(s * (s - x) * (s - y) * (s - z));
+console.log(herons);
+
+// area of circle
+let R = 12;
+let area = 2 * Math.PI * R;
+console.log(Math.floor(area));
