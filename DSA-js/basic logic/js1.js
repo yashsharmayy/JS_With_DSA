@@ -74,3 +74,13 @@ console.log(h % g); // 5 -- because divident is smaller then divisor
 // 5<12
 
 //
+let I = 4563;
+console.log(I % 10); // 3
+console.log(I % 100); // 63
+console.log(I % 1000); // 563
+console.log(I % 10000); // 4563
+
+console.log(I / 10); // 456.3
+console.log(Math.floor(I / 10)); // 456
+console.log(Math.floor(I / 100)); // 45
+console.log(Math.floor(I / 1000)); // 4
