@@ -9,8 +9,8 @@ if (ans >= 6) {
 // "15" act as a integer
 
 //-------------------------------
-let age = Number(prompt("what is your age"));
-
+// let age = Number(prompt("what is your age"));
+let age = 6;
 if (age >= 18) {
   console.log("you can vote");
 } else {
