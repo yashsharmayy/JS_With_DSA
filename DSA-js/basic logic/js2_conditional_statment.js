@@ -119,4 +119,38 @@ if (money >= 2) {
 if (money >= 1) {
   console.log("1 coins =", money);
 }
-//------------
+// ternary operator------------
+12 > 13 ? console.log("this is true") : console.log("this is false");
+
+// nested ternary operator
+let num = 0;
+console.log(num > 0 ? "positive" : num < 0 ? "negative" : "zero");
+
+// switch case
+let day = 2;
+switch (day) {
+  case 1:
+    console.log("monday");
+    break;
+  case 2:
+    console.log("tuesday");
+    break;
+  case 3:
+    console.log("wednesday");
+    break;
+  case 4:
+    console.log("thursday");
+    break;
+  case 5:
+    console.log("friday");
+    break;
+  case 6:
+    console.log("saturday");
+    break;
+  case 7:
+    console.log("sunday");
+    break;
+
+  default:
+    break;
+}
