@@ -154,3 +154,17 @@ switch (day) {
   default:
     break;
 }
+
+switch (true) {
+  case 19 > 2:
+    console.log("this is ans");
+
+    break;
+  case 1 > 12:
+    console.log("this is not ans");
+
+    break;
+
+  default:
+    break;
+}
