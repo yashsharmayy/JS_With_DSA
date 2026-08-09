@@ -119,3 +119,4 @@ if (money >= 2) {
 if (money >= 1) {
   console.log("1 coins =", money);
 }
+//------------
