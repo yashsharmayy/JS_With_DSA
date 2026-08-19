@@ -30,3 +30,4 @@ if (isNaN(n)) {
     console.log("no should be n=0or n>0");
   }
 }
+//----------
