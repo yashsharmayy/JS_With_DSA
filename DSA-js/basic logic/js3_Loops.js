@@ -45,3 +45,20 @@ if (isNaN(n)) {
     console.log("no should be n=0or n>0");
   }
 }
+
+// factors of number
+
+let numm = 12;
+if (isNaN(numm)) {
+  console.log("enter a valid no ");
+} else {
+  if (numm > 0) {
+    for (let i = 1; i <= numm; i++) {
+      if (numm % i === 0) {
+        console.log(i);
+      }
+    }
+  } else {
+    console.log("no should be n=0or n>0");
+  }
+}
