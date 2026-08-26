@@ -30,4 +30,18 @@ if (isNaN(n)) {
     console.log("no should be n=0or n>0");
   }
 }
-//----------
+//----------factorial
+
+if (isNaN(n)) {
+  console.log("enter a valid no");
+} else {
+  if (n > 0) {
+    let fact = 1;
+    for (let i = 1; i <= n; i++) {
+      fact = fact * i;
+    }
+    console.log(fact);
+  } else {
+    console.log("no should be n=0or n>0");
+  }
+}
