@@ -62,3 +62,26 @@ if (isNaN(numm)) {
     console.log("no should be n=0or n>0");
   }
 }
+//----prime number
+
+let p = 12;
+if (isNaN(p)) {
+  console.log("enter a valid no ");
+} else {
+  if (p > 0) {
+    let isprime = true;
+    for (let i = 2; i <= Math.floor(p / 2); i++) {
+      if (p % i === 0) {
+        isprime = false;
+        break;
+      }
+    }
+    if (isprime) {
+      console.log(p, "is prime");
+    } else {
+      console.log(p, "is not prime");
+    }
+  } else {
+    console.log("no should be n=0or n>0");
+  }
+}
