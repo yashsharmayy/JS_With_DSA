@@ -64,7 +64,7 @@ if (isNaN(numm)) {
 }
 //----prime number
 
-let p = 12;
+let p = 11;
 if (isNaN(p)) {
   console.log("enter a valid no ");
 } else {
