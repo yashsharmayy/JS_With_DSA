@@ -85,3 +85,4 @@ if (isNaN(p)) {
     console.log("no should be n=0or n>0");
   }
 }
+// break and continue
